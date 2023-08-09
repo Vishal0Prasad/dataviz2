@@ -50,6 +50,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: index.js
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: 'Artifact'
+          path: dist
+      - name: Deploy Artifact
         id: deployment
         uses: actions/deploy-pages@v2
