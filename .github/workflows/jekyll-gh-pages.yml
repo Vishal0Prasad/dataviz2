@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: pnpm build
       - name: Upload artifact
-        uses: ./dist
+        uses: actions/deploy-pages@v2
 
   # Deployment job
   deploy:
