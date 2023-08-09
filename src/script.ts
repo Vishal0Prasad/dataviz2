@@ -73,7 +73,7 @@ document.body.appendChild(stats.dom);
 function animate() {
   requestAnimationFrame(animate);
 
-  earthChart.rotation.y += 0.01;
+  earthChart.rotation.y += 0.005;
   controls.update();
 
   render();
