@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with: 
           name: index.js
-          path: dist/index.js
+          path: dist
 
   # Deployment job
   deploy:
