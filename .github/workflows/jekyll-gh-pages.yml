@@ -38,6 +38,9 @@ jobs:
         run: pnpm build
       - name: Upload artifact
         uses: actions/deploy-pages@v2
+        with: 
+          name: index.js
+          path: dist/index.js
 
   # Deployment job
   deploy:
