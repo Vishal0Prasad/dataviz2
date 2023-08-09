@@ -1,6 +1,6 @@
 
 import './App.css'
-import "./main";
+import "./script";
 
 
 function App() {
