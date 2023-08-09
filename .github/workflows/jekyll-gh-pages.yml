@@ -39,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with: 
-          name: index.js
+          name: Artifact
           path: dist
 
   # Deployment job
@@ -53,7 +53,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: 'Artifact'
+          name: Artifact
           path: dist
       - name: Deploy Artifact
         id: deployment
